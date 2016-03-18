@@ -26,6 +26,8 @@ public class maintugas {
         int d=masuk.nextInt();
         System.out.println("masukan tinggi trapesium: ");
         int e=masuk.nextInt();
+        System.out.println("luas persegi panjang: "+t1.getluas(a, b));
+        System.out.println("luas trapesium: "+t2.getluas(c, d, e));
         jumlah=(t1.getluas(a, b)+t2.getluas(c, d, e));
         System.out.println("jumlah: "+jumlah);
     }
