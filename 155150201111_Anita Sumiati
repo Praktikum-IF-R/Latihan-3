@@ -1,0 +1,78 @@
+package latihan3;
+import java.util.Scanner;
+public class Latihan3 {
+private String menu;
+private int p,l,pilih;
+private int A,B,t;
+private int PersegiPanjang,Trapesium,jumlah;
+private double luas,luas2;
+
+Scanner input=new Scanner(System.in);
+
+public void PersegiPangjang(int panjang ,int lebar){
+    p=panjang;
+    l=lebar;
+}
+public void setPanjangPersegi(){
+    System.out.print("Masukan panjang   :");
+    p=input.nextInt();
+}
+public void setLebarPersegi(){
+    System.out.print("Masukan lebar     :");
+    l=input.nextInt();
+}
+public void hitung1(){
+    luas=p+l;
+    System.out.println("Luas Persegi Panjang Adalah :"+luas);
+}
+public int Trapesium(int sisiA ,int sisiB ,int tinggi ){
+    A=sisiA;
+    B=sisiB;
+    t=tinggi;
+    return Trapesium;
+}
+public void setsisiA(){
+    System.out.print("Masukan Sisi Atas     :");
+    A=input.nextInt();
+}
+public void setsisiB(){
+    System.out.print("Masukan Sisi Bawah    :");
+    B=input.nextInt();
+}
+public void settinggi(){
+    System.out.print("Masukan tinggi        :");
+    t=input.nextInt();
+}
+public void hitung2(){
+    luas2=(A+B)*t/0.5;
+    System.out.println("Luas Trapesium adalah :"+luas2);
+}
+public void jumlah(){
+    System.out.println("Jumlah Kedua Luas Adalah :"+(luas+luas2));
+
+}
+}
+package latihan3;
+public class MainLatihan {
+    public static void main (String [] args){
+    Latihan3 latih =new Latihan3();
+    System.out.println("--Luas Persegi Panjang--");
+    latih.setPanjangPersegi();
+    latih.setLebarPersegi();
+    System.out.println("============================");
+    latih.hitung1();
+    System.out.println("============================");
+    Latihan3 Trapesium =new Latihan3();
+    System.out.println("--Luas Trapesium--");
+    latih.setsisiA();
+    latih.setsisiB();
+    latih.settinggi();
+    System.out.println("============================");
+    latih.hitung2();
+    System.out.println("============================");
+    System.out.println("--Jumlah Kedua Luas--");
+    System.out.println("============================");
+    latih.jumlah();
+    System.out.println("============================");
+    }
+}
